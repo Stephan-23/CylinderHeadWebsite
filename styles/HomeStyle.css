@@ -1,4 +1,94 @@
-.main{
-    background-image: url("/images/Homepage.jpg");
+/* Reset default margins and padding */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /*Set the font family */
+}
 
+:root{
+   --primary-color : white;
+}
+.nav-container {
+  display: flex; /* Use flexbox to align logo and links */
+  justify-content: space-between; /* Logo on the left, links on the right */
+  align-items: center; /* Vertically center the content */
+}
+
+/* Style the logo text */
+.logo {
+  color: var(--primary-color); /* Match the color of the nav links */
+  font-size: 24px; /* Larger font size to make it look like a logo */
+  font-weight: bold; /* Bold text for emphasis */
+  font-family: Arial, sans-serif; /* Consistent font with the rest of the site */
+}
+
+/* Style the navigation bar */
+nav.navbar {
+  position: fixed; /* Make the navbar to be fixed at the top*/
+  top: 0;
+  width: 100%; /* Full width */
+  background-color: #333; /* Dark background for the navbar */
+  padding: 15px 20px; /* Padding for spacing */
+  z-index: 1000; /* Ensures the navbar stays above other content */
+}
+
+/* Style the navigation links */
+nav.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  margin-right: 30px;
+  padding: 0;
+  display: flex; /* Use flexbox to align links */
+  justify-content: flex-end; /* Align links to the right */
+  gap: 20px; /* Space between links */
+}
+
+/* Style each list item */
+nav.navbar ul li {
+  display: inline; /* Keep inline for flexbox compatibility */
+}
+
+/* Style the links */
+nav.navbar ul li a {
+  text-decoration: none;
+  color:var(--primary-color); /* Light color for links */
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Hover effect for links */
+nav.navbar ul li a:hover {
+  text-decoration: none;
+  color: lightskyblue; /* Slightly darker on hover */
+}
+
+/* Style the hero section */
+.hero {
+  background-image: url("/images/Homepage.jpg");
+  background-size: cover; /* Ensures the background image covers the entire section */
+  background-position: center; /* Centers the background image */
+  height: 100vh; /* full height of the viewport */
+  display: flex; /* Makes it a flex container to center content */
+  flex-direction: column; /* Stack h1 and p vertically */
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  text-align: center; /* Center the text inside the section */
+  padding-top: 60px; /* Add padding to avoid overlap with fixed navbar */
+}
+
+/* Style the heading */
+h1 {
+  color:var(--primary-color);
+  margin: 0; /* Removes any margin around the text */
+  padding: 0;
+  font-size: 48px; /* Larger font size to match the screenshot */
+  font-weight: bold; /* Bold text */
+}
+
+/* Style the paragraph */
+p {
+  color: var(--primary-color);
+  margin: 10px 0 0 0; /* Add some space between h1 and p */
+  padding: 0;
+  font-size: 24px; /* Larger font size to match the screenshot */
 }
