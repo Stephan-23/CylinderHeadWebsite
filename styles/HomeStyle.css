@@ -187,21 +187,28 @@ nav.navbar ul li a:hover {
   margin-bottom: 30px; /* Space below the heading */
 }
 
-/* Style the features container */
 .features {
-  display: grid; /* Use grid to align features in a 2x2 layout */
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 20px; /* Space between features */
-  max-width: 800px; /* Limit the width of the grid */
-  margin: 0 auto; /* Center the grid */
+  display: flex; /* Use flexbox to align features */
+  flex-wrap: wrap; /* Allow features to wrap to create a 2x2 layout */
+  justify-content: center; /* Center the features */
+  gap: 40px; /* Space between features */
+  max-width: 800px; /* Limit the width of the features */
+  margin: 0 auto; /* Center the features */
 }
 
 /* Style each feature */
 .feature {
+  flex: 1 1 300px; /* Each feature takes up at least 300px, grows/shrinks as needed */
+  max-width: 300px; /* Limit the width of each feature */
   text-align: left; /* Align text to the left */
-  display: flex; /* Use flexbox to align icon and text */
-  align-items: flex-start; /* Align items at the top */
-  gap: 15px; /* Space between icon and text */
+}
+
+/* Style the heading and icon container */
+.feature-heading {
+  display: flex; /* Use flexbox to align icon and heading */
+  align-items: center; /* Vertically center the icon and heading */
+  gap: 15px; /* Space between icon and heading */
+  margin-bottom: 10px; /* Space below the heading/icon */
 }
 
 /* Style the icon in each feature */
