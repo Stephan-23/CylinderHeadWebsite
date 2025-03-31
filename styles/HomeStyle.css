@@ -162,3 +162,95 @@ nav.navbar ul li a:hover {
   line-height: 1.5; /* Improve readability */
   margin: 0; /* Remove default margin */
 }
+
+/* Style the why-choose-us section */
+.why-choose-us {
+  background-color: #1a2526;
+  padding: 60px 20px; 
+  text-align: center; /* Center the text */
+  color: var(--primary-color); /* White text for the section */
+}
+
+/* Style the why-choose-us content */
+.why-choose-us-content {
+  background-color: #005b96; 
+  border-radius: 10px; /* Rounded corners */
+  padding: 40px 20px; /* Padding inside the content area */
+  margin: 0 auto 40px auto; /* Center the content with space below */
+  max-width: 1000px; /* Limit the width for better readability */
+}
+
+/* Style the why-choose-us heading */
+.why-choose-us-content h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px; /* Space below the heading */
+}
+
+/* Style the features container */
+.features {
+  display: grid; /* Use grid to align features in a 2x2 layout */
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px; /* Space between features */
+  max-width: 800px; /* Limit the width of the grid */
+  margin: 0 auto; /* Center the grid */
+}
+
+/* Style each feature */
+.feature {
+  text-align: left; /* Align text to the left */
+  display: flex; /* Use flexbox to align icon and text */
+  align-items: flex-start; /* Align items at the top */
+  gap: 15px; /* Space between icon and text */
+}
+
+/* Style the icon in each feature */
+.feature i {
+  font-size: 24px; /* Icon size */
+  color: var(--primary-color); /* White icons */
+  margin-top: 5px; /* Slight adjustment for alignment */
+}
+
+/* Style the feature heading */
+.feature h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px; /* Space below the heading */
+}
+
+/* Style the feature paragraph */
+.feature p {
+  font-size: 16px;
+  line-height: 1.5; /* Improve readability */
+  margin: 0; /* Remove default margin */
+}
+
+/* Style the call-to-action (CTA) section */
+.cta {
+  text-align: center; /* Center the content */
+}
+
+/* Style the CTA heading */
+.cta h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Style the CTA button */
+.cta-button {
+  background-color: #005b96;
+  color: var(--primary-color); /* White text */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 15px 30px; /* Padding for the button */
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the button */
+.cta-button:hover {
+  background-color: #003f6b; /* Darker blue on hover */
+}
