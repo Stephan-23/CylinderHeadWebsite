@@ -94,3 +94,39 @@ nav.navbar ul li a:hover {
 }
 
 /*----------------------------------Styling the Hero2---------------------------------------*/
+.services1{
+  text-align: center;
+}
+
+.service-cards1{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  
+}
+
+.card{
+  width: 350px;
+  background-color: #27b3b3;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.services1 h1 {
+  color: black;
+  margin: 50px; /* Removes any margin around the text */
+  padding: 0;
+  font-size: 48px; /* Larger font size to match the screenshot */
+  font-weight: bold; /* Bold text */
+}
+
+/* Style the paragraph */
+.services1 p {
+  color: black;
+  margin: 10px 0 0 0; /* Add some space between h1 and p */
+  padding: 0;
+  font-size: 24px; /* Larger font size to match the screenshot */
+}
