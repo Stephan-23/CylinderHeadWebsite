@@ -2,12 +2,24 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif; /*Set the font family */
+  font-family: Arial, sans-serif; /* Set the font family */
 }
 
-:root{
-   --primary-color : white;
+:root {
+  --primary-color: white;
 }
+
+/* Style the navigation bar */
+nav.navbar {
+  position: fixed; /* Make the navbar fixed at the top */
+  top: 0;
+  width: 100%; /* Full width */
+  background-color: #333; /* Dark background for the navbar */
+  padding: 15px 20px; /* Padding for spacing */
+  z-index: 1000; /* Ensures the navbar stays above other content */
+}
+
+/* Container for logo and nav links */
 .nav-container {
   display: flex; /* Use flexbox to align logo and links */
   justify-content: space-between; /* Logo on the left, links on the right */
@@ -20,16 +32,6 @@ body {
   font-size: 24px; /* Larger font size to make it look like a logo */
   font-weight: bold; /* Bold text for emphasis */
   font-family: Arial, sans-serif; /* Consistent font with the rest of the site */
-}
-
-/* Style the navigation bar */
-nav.navbar {
-  position: fixed; /* Make the navbar to be fixed at the top*/
-  top: 0;
-  width: 100%; /* Full width */
-  background-color: #333; /* Dark background for the navbar */
-  padding: 15px 20px; /* Padding for spacing */
-  z-index: 1000; /* Ensures the navbar stays above other content */
 }
 
 /* Style the navigation links */
@@ -51,7 +53,7 @@ nav.navbar ul li {
 /* Style the links */
 nav.navbar ul li a {
   text-decoration: none;
-  color:var(--primary-color); /* Light color for links */
+  color: var(--primary-color); /* Light color for links */
   font-weight: bold;
   font-size: 18px;
 }
@@ -67,7 +69,7 @@ nav.navbar ul li a:hover {
   background-image: url("/images/Homepage.jpg");
   background-size: cover; /* Ensures the background image covers the entire section */
   background-position: center; /* Centers the background image */
-  height: 100vh; /* full height of the viewport */
+  height: 100vh; /* Full height of the viewport */
   display: flex; /* Makes it a flex container to center content */
   flex-direction: column; /* Stack h1 and p vertically */
   justify-content: center; /* Horizontally center the content */
@@ -76,16 +78,16 @@ nav.navbar ul li a:hover {
   padding-top: 60px; /* Add padding to avoid overlap with fixed navbar */
 }
 
-/* Style the heading */
+/* Style the hero heading */
 .hero h1 {
-  color:var(--primary-color);
+  color: var(--primary-color);
   margin: 0; /* Removes any margin around the text */
   padding: 0;
   font-size: 48px; /* Larger font size to match the screenshot */
   font-weight: bold; /* Bold text */
 }
 
-/* Style the paragraph */
+/* Style the hero paragraph */
 .hero p {
   color: var(--primary-color);
   margin: 10px 0 0 0; /* Add some space between h1 and p */
@@ -93,40 +95,70 @@ nav.navbar ul li a:hover {
   font-size: 24px; /* Larger font size to match the screenshot */
 }
 
-/*----------------------------------Styling the Hero2---------------------------------------*/
-.services1{
-  text-align: center;
+/*----------------------------------Styling the Services1 Section---------------------------------------*/
+.services1 {
+  background-color: #1a2526; /* Dark background to match the screenshot */
+  padding: 60px 20px; /* Padding for spacing */
+  text-align: center; /* Center the text */
+  color: var(--primary-color); /* White text for the section */
 }
 
-.service-cards1{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  
-}
-
-.card{
-  width: 350px;
-  background-color: #27b3b3;
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 20px;
-}
-
+/* Style the services heading */
 .services1 h1 {
-  color: black;
-  margin: 50px; /* Removes any margin around the text */
+  color: var(--primary-color); /* White text */
+  margin: 0 0 20px 0; /* Space below the heading */
   padding: 0;
-  font-size: 48px; /* Larger font size to match the screenshot */
+  font-size: 36px; /* Slightly smaller than the hero h1 */
   font-weight: bold; /* Bold text */
 }
 
-/* Style the paragraph */
+/* Style the services paragraph */
 .services1 p {
-  color: black;
-  margin: 10px 0 0 0; /* Add some space between h1 and p */
+  color: var(--primary-color); /* White text */
+  font-size: 18px;
+  line-height: 1.6; /* Improve readability */
+  margin: 0 auto 40px auto; /* Center the paragraph with space below */
   padding: 0;
-  font-size: 24px; /* Larger font size to match the screenshot */
+  max-width: 800px; /* Limit the width for better readability */
+}
+
+/* Style the service cards container */
+.service-cards1 {
+  display: flex; /* Use flexbox to align cards in a row */
+  justify-content: center; /* Center the cards */
+  gap: 20px; /* Space between cards */
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+/* Style each card */
+.card {
+  background-color: #2a3b3d; /* Slightly lighter dark background for cards */
+  border-radius: 10px; /* Rounded corners */
+  padding: 30px 20px; /* Padding inside the card */
+  width: 300px; /* Fixed width for each card */
+  text-align: center; /* Center the content inside the card */
+  margin: 10px; /* Adjusted margin for better spacing */
+}
+
+/* Style the icon in each card */
+.card i {
+  font-size: 40px; /* Larger icon size */
+  color: #00aaff; /* Blue color for icons to match the screenshot */
+  margin-bottom: 20px; /* Space below the icon */
+}
+
+/* Style the card heading */
+.card h3 {
+  color: var(--primary-color); /* White text */
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Style the card paragraph */
+.card p {
+  color: var(--primary-color); /* White text */
+  font-size: 16px;
+  line-height: 1.5; /* Improve readability */
+  margin: 0; /* Remove default margin */
 }
