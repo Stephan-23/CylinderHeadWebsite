@@ -317,3 +317,23 @@ nav.navbar ul li a:hover {
 .scroll-up:hover {
   color: #00aaff; /* Blue on hover to match the theme */
 }
+
+/* Style the footer */
+.footer {
+  background-color: #0d8994; /* Match the dark background of other sections */
+  color: var(--primary-color); /* White text */
+  text-align: center; /* Center the content */
+  padding: 20px 0; /* Padding for spacing */
+  font-size: 16px;
+}
+
+/* Style the footer paragraphs */
+.footer p {
+  margin: 5px 0; /* Small margin between paragraphs */
+}
+
+/* Style the heart icon */
+.footer .fa-heart {
+  color: #ff4d4d; /* Red color for the heart */
+  margin: 0 5px; /* Small margin around the heart */
+}
